@@ -4,8 +4,8 @@ function moc() {
     contentElement.innerHTML += '<br>|‾‾|';
   }
 
-  setInterval(moc, 100);
-  window.addEventListener('scroll', function() {
+setInterval(moc, 100);
+window.addEventListener('scroll', function() {
     const contentHeight = document.getElementById('content').clientHeight;
     const currentScroll = window.scrollY;
     const windowHeight = window.innerHeight;
@@ -15,7 +15,7 @@ function moc() {
     }
   });
 
-  function scrollToTop() {
+function scrollToTop() {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
